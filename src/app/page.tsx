@@ -198,26 +198,27 @@ function Resume() {
       },
     },
     {
-      company: 'Airbnb',
-      title: 'Product Designer',
+      company: 'SJOG Dublin South East',
+      title: 'Recruitment and Retention ',
       logo: logoAirbnb,
-      start: '2014',
-      end: '2019',
+      start: '2012',
+      end: '2023',
     },
     {
-      company: 'Facebook',
-      title: 'iOS Software Engineer',
-      logo: logoFacebook,
-      start: '2011',
-      end: '2014',
-    },
-    {
-      company: 'Starbucks',
-      title: 'Shift Supervisor',
+      company: 'Aware',
+      title: 'Life Skills Programme Facilitator',
       logo: logoStarbucks,
       start: '2008',
       end: '2011',
     },
+    {
+      company: 'Symantec',
+      title: 'iOS Software Engineer',
+      logo: logoFacebook,
+      start: '2000',
+      end: '2007',
+    },
+
   ]
 
   return (
