@@ -173,7 +173,7 @@ function Resume() {
     },
     {
       company: 'Symantec',
-      title: 'iOS Softwar ',
+      title: 'iOS Softwa ',
       logo: logoFacebook,
       start: '2000',
       end: '2007',
