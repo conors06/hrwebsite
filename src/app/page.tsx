@@ -173,7 +173,7 @@ function Resume() {
     },
     {
       company: 'Symantec',
-      title: 'iOS Software Engineer',
+      title: 'iOS Software ',
       logo: logoFacebook,
       start: '2000',
       end: '2007',
