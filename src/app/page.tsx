@@ -213,7 +213,7 @@ export default async function Home() {
             Anna Marie Walshe
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I’m Anna Marie, I am an experienced Human Resources Professional with more than 20 years experience in a wide variety of organisations, which has provided me with an in depth understanding of different sectors and how they function
+            I’m Anna Marie, I am a Human Resources with more than 20 years experience in a wide variety of organisations, which has provided me with an in depth understanding of different sectors and how they function
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
