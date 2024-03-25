@@ -4,9 +4,7 @@ import remarkGfm from 'remark-gfm'
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export",  // <=== enables static exports
-  reactStrictMode: true,
-  basePath: "/hrwebsite",
+  images: { unoptimized: true },
   pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'mdx'],
 }
 
