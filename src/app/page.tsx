@@ -166,7 +166,7 @@ function Resume() {
     },
     {
       company: 'Aware',
-      title: 'Life Skills Programme Facilitator',
+      title: 'Life Skills Programme ',
       logo: logoStarbucks,
       start: '2008',
       end: '2011',
