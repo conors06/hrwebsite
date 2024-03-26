@@ -26,6 +26,7 @@ export default function RootLayout({
         <Providers>
           <div className="flex w-full">
             <Layout>{children}</Layout>
+            <SpeedInsights />
           </div>
         </Providers>
       </body>
