@@ -4,7 +4,7 @@ import { Providers } from '@/app/providers'
 import { Layout } from '@/components/Layout'
 
 import '@/styles/tailwind.css'
-
+import { SpeedInsights } from "@vercel/speed-insights/next"
 export const metadata: Metadata = {
   title: {
     template: '%s - Default',
