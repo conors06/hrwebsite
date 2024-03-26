@@ -7,7 +7,7 @@ import '@/styles/tailwind.css'
 import { SpeedInsights } from "@vercel/speed-insights/next"
 export const metadata: Metadata = {
   title: {
-    template: '%s - Default',
+    template: '%s - Walshe HR',
     default:
       'Walshe HR',
   },
