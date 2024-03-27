@@ -9,6 +9,11 @@ export default {
     require('@tailwindcss/forms'),
   ],
   theme: {
+    extend: {
+      maxWidth: {
+        '7.5xl': '86rem', // Add your desired value here, e.g., '90rem' for 1440px
+      },
+    },
     fontSize: {
       xs: ['0.8125rem', { lineHeight: '1.5rem' }],
       sm: ['0.875rem', { lineHeight: '1.5rem' }],
