@@ -144,61 +144,62 @@ function Role({ role }: { role: Role }) {
   )
 }
 
+/*
 function Resume() {
-  let resume: Array<Role> = [
-    {
-      company: 'Child Vision',
-      title: 'HR Consultant',
-      logo: logoPlanetaria,
-      start: '2019',
-      end: {
-        label: 'Present',
-        dateTime: new Date().getFullYear().toString(),
-      },
+let resume: Array<Role> = [
+  {
+    company: 'Child Vision',
+    title: 'HR Consultant',
+    logo: logoPlanetaria,
+    start: '2019',
+    end: {
+      label: 'Present',
+      dateTime: new Date().getFullYear().toString(),
     },
-    {
-      company: 'SJOG Dublin South East',
-      title: 'Recruitment and Retention ',
-      logo: logoAirbnb,
-      start: '2012',
-      end: '2023',
-    },
-    {
-      company: 'Aware',
-      title: 'Life Skills Programme Facilitator',
-      logo: logoStarbucks,
-      start: '2008',
-      end: '2011',
-    },
-    {
-      company: 'Symantec',
-      title: 'iOS Softwa ',
-      logo: logoFacebook,
-      start: '2000',
-      end: '2007',
-    },
+  },
+  {
+    company: 'SJOG Dublin South East',
+    title: 'Recruitment and Retention ',
+    logo: logoAirbnb,
+    start: '2012',
+    end: '2023',
+  },
+  {
+    company: 'Aware',
+    title: 'Life Skills Programme Facilitator',
+    logo: logoStarbucks,
+    start: '2008',
+    end: '2011',
+  },
+  {
+    company: 'Symantec',
+    title: 'iOS Softwa ',
+    logo: logoFacebook,
+    start: '2000',
+    end: '2007',
+  },
 
-  ]
+]
 
-  return (
-    <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
-      <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
-        <BriefcaseIcon className="h-6 w-6 flex-none" />
-        <span className="ml-3">Work</span>
-      </h2>
-      <ol className="mt-6 space-y-4">
-        {resume.map((role, roleIndex) => (
-          <Role key={roleIndex} role={role} />
-        ))}
-      </ol>
-      <Button href="#" variant="secondary" className="group mt-6 w-full">
-        Download CV
-        <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
-      </Button>
-    </div>
-  )
+return (
+  <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
+    <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
+      <BriefcaseIcon className="h-6 w-6 flex-none" />
+      <span className="ml-3">Work</span>
+    </h2>
+    <ol className="mt-6 space-y-4">
+      {resume.map((role, roleIndex) => (
+        <Role key={roleIndex} role={role} />
+      ))}
+    </ol>
+    <Button href="#" variant="secondary" className="group mt-6 w-full">
+      Download CV
+      <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
+    </Button>
+  </div>
+)
 }
-
+*/
 
 
 export default async function Home() {
@@ -211,7 +212,17 @@ export default async function Home() {
             Walshe HR
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I’m Anna Marie, I am a Human Resources with more than 20 years experience in a wide variety of organisations, which has provided me with an in depth understanding of different sectors and how they function
+            I’m Anna Marie, a HR Professional with more than 18 years experience working in
+            a variety of sectors, for example Healthcare, Not for Profit,
+            Banking and Technology.
+            Knowledgeable in all areas of HR with particular expertise in
+            Healthcare in areas like Recruitment and Retention, Training
+            and Development, Absence Management, Employee Relations,
+            Performance Management, Employee Wellbeing and Coaching.
+            Holds a Masters in Human Resource Management and most
+            recently a Professional Diploma in Coaching and Mentoring.
+            Passionate about people and the value that the Human
+            Resources function can bring to how people experience work.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
@@ -228,7 +239,7 @@ export default async function Home() {
             hello
           </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24">
-            <Resume />
+          
           </div>
         </div>
       </Container>
