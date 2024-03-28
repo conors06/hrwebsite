@@ -1,0 +1,6 @@
+ERROR:root:Error sending email: (553, b'Relaying disallowed as user@example.com')
+ERROR:root:Error sending email: (553, b'Relaying disallowed as joe@google.com')
+ERROR:root:Error sending email: (553, b'Relaying disallowed as joe@google.com')
+INFO:root:Email sent successfully.
+INFO:root:Email sent successfully.
+INFO:root:Email sent successfully.

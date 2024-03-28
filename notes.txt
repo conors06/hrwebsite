@@ -2,3 +2,8 @@ bigger picture on home page
 header hold to  top
 contact form - name,email,contact
 testimonials - logo,name,position
+
+
+
+
+spotlight edges past container,pop up motion contact
