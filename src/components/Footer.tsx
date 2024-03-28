@@ -1,5 +1,7 @@
 import Link from 'next/link'
-
+import {
+  LinkedInIcon,
+} from '@/components/SocialIcons'
 import { ContainerInner, ContainerOuter } from '@/components/Container'
 
 function NavLink({
@@ -19,6 +21,19 @@ function NavLink({
   )
 }
 
+function SocialLink({
+  icon: Icon,
+  ...props
+}: React.ComponentPropsWithoutRef<typeof Link> & {
+  icon: React.ComponentType<{ className?: string }>
+}) {
+  return (
+    <Link className="group -m-1 p-1" {...props} prefetch={true}>
+      <Icon className="h-6 w-6 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400 dark:group-hover:fill-zinc-300" />
+    </Link>
+  )
+}
+
 export function Footer() {
   return (
     <footer className="mt-32 flex-none">
@@ -27,6 +42,11 @@ export function Footer() {
           <ContainerInner>
             <div className="flex flex-col items-center justify-between gap-6 sm:flex-row">
               <div className="flex flex-wrap justify-center gap-x-6 gap-y-1 text-sm font-medium text-zinc-800 dark:text-zinc-200">
+                <SocialLink
+                  href="https://www.linkedin.com/in/annamariewalshe/"
+                  aria-label="Follow on LinkedIn"
+                  icon={LinkedInIcon}
+                />
                 <NavLink href="/about">About</NavLink>
                 <NavLink href="/projects">Projects</NavLink>
                 <NavLink href="/speaking">Speaking</NavLink>
