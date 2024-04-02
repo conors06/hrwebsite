@@ -1,60 +1,30 @@
+'use client';
 import { BuildingOffice2Icon, EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline'
 import { Container } from '@/components/Container2'
-import nodemailer from 'nodemailer'
-
+import { useState } from 'react';
+import { SuccessMessage } from '@/components/emailSentSuccessfullyNotification';
+import { FailureMessage } from '@/components/emailSentFailedNotification';
+// @ts-ignore comment 
+import { sendEmail } from '@/components/sendEmail';
 
 
 
 
 export default function Contact() {
-  async function sendEmail(formData: FormData) {
-    'use server'
+  const [emailSent, setEmailSent] = useState<boolean | null>(null);
 
-    const rawFormData = {
-      email: formData.get('email'),
-      name: formData.get('name'),
-      phoneNumber: formData.get('phone-number'),
-      message: formData.get('message'),
-    }
-
-    console.log('Form Data:', rawFormData);
-
-    // Create a SMTP transporter
-    const transporter = nodemailer.createTransport({
-      host: 'smtp.zoho.eu', // hostname of your smtp server
-      port: 465, // port of your smtp server
-      secure: true, // true for 465, false for other ports
-      auth: {
-        user: 'annamarie@walshehr.ie', // your email address
-        pass: 'Moycullen72?', // your password
-      },
-    });
-
-    // Define email options
-    const mailOptions = {
-      from: 'annamarie@walshehr.ie',
-      to: 'annamarie@walshehr.ie',
-      subject: 'New message from your website',
-      text: `
-        Name: ${rawFormData.name}
-        Email: ${rawFormData.email}
-        Phone Number: ${rawFormData.phoneNumber}
-        Message: ${rawFormData.message}
-      `,
-    };
-
-    // Send email
-    try {
-      await transporter.sendMail(mailOptions);
-      console.log('Email sent successfully');
-    } catch (error) {
-      console.error('Error sending email:', error);
-    }
-  }
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const formData = new FormData(e.currentTarget);
+    const result = await sendEmail(formData);
+    setEmailSent(result);
+  };
 
   return (
 
     <Container className="mt-16 sm:mt-32">
+      {emailSent === true && <SuccessMessage />}
+      {emailSent === false && <FailureMessage />}
       <div className="relative isolate bg-white dark:bg-zinc-900">
         <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
           <div className="relative px-6 pb-20 pt-24 sm:pt-32 lg:static lg:px-8 lg:py-48">
@@ -114,7 +84,7 @@ export default function Contact() {
               </dl>
             </div>
           </div>
-          <form action={sendEmail} className="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48">
+          <form onSubmit={handleSubmit} className="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48">
             <div className="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
               <div className="sm:col-span-2">
                 <div>
