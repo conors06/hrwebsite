@@ -1,6 +1,11 @@
 import { BuildingOffice2Icon, EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline'
 import { Container } from '@/components/Container2'
 import nodemailer from 'nodemailer'
+
+
+
+
+
 export default function Contact() {
   async function sendEmail(formData: FormData) {
     'use server'
