@@ -31,7 +31,7 @@ export default function Testimonials() {
                                 </div>
                             </figcaption>
                         </figure>
-                        <figure className="rounded-2xl h-98 bg-white shadow-lg ring-1 ring-gray-900/5">
+                        <figure className="rounded-2xl h-secondFigureFit bg-white shadow-lg ring-1 ring-gray-900/5">
                             <blockquote className="p-6 text-lg font-semibold leading-7 tracking-tight text-gray-900 sm:p-12 sm:text-xl sm:leading-8">
                                 <p>{`"I have been more than happy with the quality of Anna Marie’s work. Anna Marie is an absolute professional, nothing phases her. In addition to having a very impressive HR knowledge-base, Anna Marie is pragmatic, cogent and very personally engaging, putting people at their ease, something which is invaluable when having potentially difficult conversations."`}</p>
                             </blockquote>
