@@ -10,6 +10,9 @@ export default {
   ],
   theme: {
     extend: {
+      height: {
+        '98': '32.5rem',
+      },
       maxWidth: {
         '7.5xl': '86rem', // Add your desired value here, e.g., '90rem' for 1440px
       },
