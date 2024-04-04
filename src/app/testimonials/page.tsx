@@ -9,8 +9,8 @@ function classNames(...classes: any[]): string {
 
 export default function Testimonials() {
     return (
-        <Container className="mt-16 sm:mt-32">
-            <div className="relative isolate bg-white dark:bg-zinc-900  pb-32 pt-24 sm:pt-32">
+        <Container className="mt-4">
+            <div className="relative isolate bg-white dark:bg-zinc-900  pb-32 sm:pt-32">
                 {/* Background pattern */}
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
                     <div className="mx-auto max-w-xl text-center">
@@ -39,7 +39,7 @@ export default function Testimonials() {
                             </blockquote>
                             <figcaption className="flex flex-wrap items-center gap-x-4 gap-y-4 border-t border-gray-900/10 px-6 py-4 sm:flex-nowrap">
                                 <a href="https://childvision.ie/" target="_blank">
-                                <Image className="h-auto w-auto flex-none" src={childVisionLogo} alt="St John of God Logo" width={40} height={10} />
+                                    <Image className="h-auto w-auto flex-none" src={childVisionLogo} alt="St John of God Logo" width={40} height={10} />
                                 </a>
                                 <div className="flex-auto">
                                     <div className="font-semibold">{"James Forbes"}</div>
