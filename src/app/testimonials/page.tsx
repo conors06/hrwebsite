@@ -24,7 +24,9 @@ export default function Testimonials() {
                                 <p>{`"Anna Marie is the person you want to meet when you require HR support services. Anna Marie fosters a healthy work environment that attracts and inspires excellence in people. Anna Marie is not a custodian of the HR Policies but can implement the policies in a way that informs, and promotes feedback and real staff engagement which is very difficult to do. Anna Marie does this naturally, she has true integrity and her knowledge across the broad sector of HR is a real loss to our organisation but a major benefit to those who work with Anna Marie now and in the future."`}</p>
                             </blockquote>
                             <figcaption className="flex flex-wrap items-center gap-x-4 gap-y-4 border-t border-gray-900/10 px-6 py-4 sm:flex-nowrap">
-                                <Image className="h-10 w-auto flex-none" src={sjogLogo} alt="St John of God Logo" width={40} height={10} />
+                                <a href="https://sjogdublinsoutheastservices.ie/" target="_blank">
+                                    <Image className="h-auto w-auto flex-none" src={sjogLogo} alt="St John of God Logo" width={40} height={10} />
+                                </a>
                                 <div className="flex-auto">
                                     <div className="font-semibold">{"Natalie Sheils"}</div>
                                     <div className="text-gray-600">{"Operations Manager, St John of God Community Services"}</div>
@@ -36,7 +38,9 @@ export default function Testimonials() {
                                 <p>{`"I have been more than happy with the quality of Anna Marie’s work. Anna Marie is an absolute professional, nothing phases her. In addition to having a very impressive HR knowledge-base, Anna Marie is pragmatic, cogent and very personally engaging, putting people at their ease, something which is invaluable when having potentially difficult conversations."`}</p>
                             </blockquote>
                             <figcaption className="flex flex-wrap items-center gap-x-4 gap-y-4 border-t border-gray-900/10 px-6 py-4 sm:flex-nowrap">
-                                <Image className="h-10 w-auto flex-none" src={childVisionLogo} alt="St John of God Logo" width={40} height={10} />
+                                <a href="https://childvision.ie/" target="_blank">
+                                <Image className="h-auto w-auto flex-none" src={childVisionLogo} alt="St John of God Logo" width={40} height={10} />
+                                </a>
                                 <div className="flex-auto">
                                     <div className="font-semibold">{"James Forbes"}</div>
                                     <div className="text-gray-600">{"Director of Care, ChildVision, National Education Centre for Blind Children"}</div>
