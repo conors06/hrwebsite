@@ -66,8 +66,8 @@ export default function Testimonials() {
 
                         </div>
                         <div className="space-y-32">
-                            <figure className="rounded-2xl h-secondFigureFit bg-white shadow-lg ring-1 ring-gray-900/5">
-                                <blockquote className="p-6 text-lg font-semibold leading-7 tracking-tight text-gray-900 sm:p-12 sm:text-xl sm:leading-8">
+                            <figure className="rounded-2xl sm:h-secondFigureFit bg-white shadow-lg ring-1 ring-gray-900/5">
+                                <blockquote className="p-6 mt-24 text-lg font-semibold leading-7 tracking-tight text-gray-900 sm:p-12 sm:text-xl sm:leading-8">
                                     <p>{`"I have been more than happy with the quality of Anna Marie's work. Anna Marie is an absolute professional, nothing phases her. In addition to having a very impressive HR knowledge-base, Anna Marie is pragmatic, cogent and very personally engaging, putting people at their ease, something which is invaluable when having potentially difficult conversations."`}</p>
                                 </blockquote>
                                 <figcaption className="flex flex-wrap items-center gap-x-4 gap-y-4 border-t border-gray-900/10 px-6 py-4 sm:flex-nowrap">
@@ -80,7 +80,7 @@ export default function Testimonials() {
                                     </div>
                                 </figcaption>
                             </figure>
-                            <figure className="rounded-2xl h-fourthFigureFit bg-white shadow-lg ring-1 ring-gray-900/5">
+                            <figure className="rounded-2xl sm:h-fourthFigureFit bg-white shadow-lg ring-1 ring-gray-900/5">
                                 <blockquote className="p-6 text-lg font-semibold leading-7 tracking-tight text-gray-900 sm:p-12 sm:text-xl sm:leading-8">
                                     <p>{`"Anna Marie provided HR support to St John of God Dublin South East for many years. We always felt in safe hands and AnnaMarie's key skill was to work well with all stakeholders in providing effective and efficient HR services. AnnaMarie proved particularly effective regarding recruitment; attracting, processing and onboarding candidates. I would recommend AnnaMarie without hesitation for your HR support needs."`}</p>
                                 </blockquote>
