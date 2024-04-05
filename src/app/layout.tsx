@@ -7,13 +7,8 @@ import '@/styles/tailwind.css'
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Analytics } from "@vercel/analytics/react"
 export const metadata: Metadata = {
-  title: {
-    template: '%s - Walshe HR',
-    default:
-      'Walshe HR',
-  },
-  description:
-    'I’m Anna Marie',
+  title: 'Walshe HR',
+  description: 'Walshe HR is an Irish HR consulting company based in Dublin. Specialising in Recruitment and Retention, Training and Development, Absence Management, Employee Relations, Performance Management, Employee Wellbeing and Coaching.',
 }
 
 export default function RootLayout({
