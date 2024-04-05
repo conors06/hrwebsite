@@ -1,6 +1,6 @@
 import { Container } from '@/components/Container'
 import Image from 'next/image';
-import sjogLogo from '@/images/logos/sjog.jpg';
+import sjogLogo from '@/images/logos/sjog.png';
 import childVisionLogo from '@/images/logos/childvision.jpg';
 import learningTreeLogo from '@/images/logos/learningtree.png';
 
@@ -54,7 +54,7 @@ export default function Testimonials() {
                                     <p>{`"Anna Marie is a very skilled HR specialist, with a real gift for putting people at their ease. Sharp, insightful and drawing on a very impressive knowledge-base, Anna Marie has been a real asset to our organisation."`}</p>
                                 </blockquote>
                                 <figcaption className="flex flex-wrap items-center gap-x-4 gap-y-4 border-t border-gray-900/10 px-6 py-4 sm:flex-nowrap">
-                                    <a href="https://childvision.ie/" target="_blank">
+                                    <a href="https://thelearningtree.ie/" target="_blank">
                                         <Image className="h-auto w-auto flex-none" src={learningTreeLogo} alt="St John of God Logo" width={40} height={10} />
                                     </a>
                                     <div className="flex-auto">
@@ -85,7 +85,7 @@ export default function Testimonials() {
                                     <p>{`"Anna Marie provided HR support to St John of God Dublin South East for many years. We always felt in safe hands and AnnaMarie's key skill was to work well with all stakeholders in providing effective and efficient HR services. AnnaMarie proved particularly effective regarding recruitment; attracting, processing and onboarding candidates. I would recommend AnnaMarie without hesitation for your HR support needs."`}</p>
                                 </blockquote>
                                 <figcaption className="flex flex-wrap items-center gap-x-4 gap-y-4 border-t border-gray-900/10 px-6 py-4 sm:flex-nowrap">
-                                    <a href="https://childvision.ie/" target="_blank">
+                                    <a href="https://sjogdublinsoutheastservices.ie/" target="_blank">
                                         <Image className="h-auto w-auto flex-none" src={sjogLogo} alt="St John of God Logo" width={40} height={10} />
                                     </a>
                                     <div className="flex-auto">
