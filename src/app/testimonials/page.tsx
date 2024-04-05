@@ -15,9 +15,9 @@ export default function Testimonials() {
                 {/* Background pattern */}
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
                     <div className="mx-auto max-w-xl text-center">
-                        <p className="mt-2 text-3xl dark:text-zinc-100 font-bold tracking-tight text-gray-900 sm:text-4xl">
+                        <h1 className="mt-2 text-4xl font-bold tracking-tight text-zinc-800 sm:text-4xl dark:text-zinc-100">
                             Testimonials
-                        </p>
+                        </h1>
                     </div>
                     <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 text-sm text-gray-900 sm:mt-20 lg:grid-cols-2 lg:max-w-none xl:mx-0 xl:grid-cols-2">
                         <div className="space-y-32">

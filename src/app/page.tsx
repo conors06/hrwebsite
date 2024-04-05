@@ -13,7 +13,7 @@ export default async function Home() {
             Walshe HR
           </h1>
           <div className="mt-6 text-xl text-center text-zinc-600 dark:text-zinc-400">
-            `I’m Anna Marie, a HR Professional with more than 18 years experience working in
+            I’m Anna Marie, a HR Professional with more than 18 years experience working in
             a variety of sectors, for example Healthcare, Not for Profit,
             Banking and Technology.
             Knowledgeable in all areas of HR with particular expertise in
@@ -23,7 +23,7 @@ export default async function Home() {
             Holds a Masters in Human Resource Management and most
             recently a Professional Diploma in Coaching and Mentoring.
             Passionate about people and the value that the Human
-            Resources function can bring to how people experience work.`
+            Resources function can bring to how people experience work.
           </div>
         </div>
       </Container>
