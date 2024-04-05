@@ -47,6 +47,34 @@ export default function Testimonials() {
                                 </div>
                             </figcaption>
                         </figure>
+                        <figure className="rounded-2xl h-thirdFigureFit bg-white shadow-lg ring-1 ring-gray-900/5">
+                            <blockquote className="p-6 text-lg font-semibold leading-7 tracking-tight text-gray-900 sm:p-12 sm:text-xl sm:leading-8">
+                                <p>{`"Anna Marie Walshe has worked with us as a HR Consultant.  Her input to date has been exceptional. We are extremely delighted with the service that Anna Marie has provided us. She is very helpful, proactive and very pleasant to work with."`}</p>
+                            </blockquote>
+                            <figcaption className="flex flex-wrap items-center gap-x-4 gap-y-4 border-t border-gray-900/10 px-6 py-4 sm:flex-nowrap">
+                                <a href="https://childvision.ie/" target="_blank">
+                                    <Image className="h-auto w-auto flex-none" src={childVisionLogo} alt="St John of God Logo" width={40} height={10} />
+                                </a>
+                                <div className="flex-auto">
+                                    <div className="font-semibold">{"Mary Leonard"}</div>
+                                    <div className="text-gray-600">{"Interim CEO, ChildVision, National Education Centre for Blind Children"}</div>
+                                </div>
+                            </figcaption>
+                        </figure>
+                        <figure className="rounded-2xl h-fourthFigureFit bg-white shadow-lg ring-1 ring-gray-900/5">
+                            <blockquote className="p-6 text-lg font-semibold leading-7 tracking-tight text-gray-900 sm:p-12 sm:text-xl sm:leading-8">
+                                <p>{`"Anna Marie provided HR support to St John of God Dublin South East for many years. We always felt in safe hands and AnnaMarie’s key skill was to work well with all stakeholders in providing effective and efficient HR services. AnnaMarie proved particularly effective regarding recruitment; attracting, processing and onboarding candidates. I would recommend AnnaMarie without hesitation for your HR support needs."`}</p>
+                            </blockquote>
+                            <figcaption className="flex flex-wrap items-center gap-x-4 gap-y-4 border-t border-gray-900/10 px-6 py-4 sm:flex-nowrap">
+                                <a href="https://childvision.ie/" target="_blank">
+                                    <Image className="h-auto w-auto flex-none" src={sjogLogo} alt="St John of God Logo" width={40} height={10} />
+                                </a>
+                                <div className="flex-auto">
+                                    <div className="font-semibold">{"Des North"}</div>
+                                    <div className="text-gray-600">{"Interim CEO, ChildVision, National Education Centre for Blind Children"}</div>
+                                </div>
+                            </figcaption>
+                        </figure>
                     </div>
                 </div>
             </div>

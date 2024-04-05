@@ -12,6 +12,8 @@ export default {
     extend: {
       height: {
         'secondFigureFit': '32.5rem',
+        'thirdFigureFit': '26.75rem',
+        'fourthFigureFit': '34.65rem',
       },
       maxWidth: {
         '7.5xl': '86rem', // Add your desired value here, e.g., '90rem' for 1440px

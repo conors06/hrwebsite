@@ -4,7 +4,7 @@ import { Container } from '@/components/Container'
 export default function Services() {
     return (
         <Container className="mt-4">
-            <div className="relative isolate bg-white dark:bg-zinc-900 sm:pt-32">
+            <div className="relative isolate bg-pink dark:bg-zinc-900 sm:pt-32">
                 {/* Background pattern */}
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
                     <div className="mx-auto max-w-xl text-center">
