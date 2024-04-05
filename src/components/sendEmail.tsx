@@ -10,7 +10,6 @@ export const sendEmail = async (formData: FormData) => {
         message: formData.get('message'),
     };
 
-    console.log('Form Data:', rawFormData);
 
     // Create a SMTP transporter
     const transporter = nodemailer.createTransport({
@@ -39,7 +38,6 @@ export const sendEmail = async (formData: FormData) => {
     // Send email
     try {
         await transporter.sendMail(mailOptions);
-        console.log('Email sent successfully');
         return true; // Return true to indicate successful email send
     } catch (error) {
         console.error('Error sending email:', error);
