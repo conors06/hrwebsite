@@ -6,7 +6,6 @@ import { SuccessMessage } from '@/components/emailSentSuccessfullyNotification';
 import { FailureMessage } from '@/components/emailSentFailedNotification';
 // @ts-ignore comment 
 import { sendEmail } from '@/components/sendEmail';
-import Head from 'next/head';
 
 
 
@@ -23,9 +22,6 @@ export default function Contact() {
   return (
 
     <Container className="mt-16 sm:mt-32">
-      <Head>
-        <link rel="canonical" href="https://walshehr.ie/contact" />
-      </Head>
       {emailSent === true && <SuccessMessage />}
       {emailSent === false && <FailureMessage />}
       <div className="relative isolate bg-white dark:bg-zinc-900">

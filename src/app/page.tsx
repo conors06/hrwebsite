@@ -1,15 +1,11 @@
 import { Container } from '@/components/Container'
 import { TextGenerateEffectDemo } from '@/components/text-generate-demo';
-import Head from 'next/head';
 
 
 export default async function Home() {
 
   return (
     <>
-      <Head>
-        <link rel="canonical" href="https://walshehr.ie" />
-      </Head>
       <Container className="mt-9">
         <div className="max-w-full">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
