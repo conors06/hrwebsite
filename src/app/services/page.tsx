@@ -1,9 +1,14 @@
 import { CardHoverEffectDemo } from '@/components/servicesCardEffectDemo';
 import { Container } from '@/components/Container'
+import Head from 'next/head';
+
 
 export default function Services() {
     return (
         <Container className="mt-4">
+            <Head>
+                <link rel="canonical" href="https://walshehr.ie/services" />
+            </Head>
             <div className="relative isolate bg-pink dark:bg-zinc-900 sm:pt-32">
                 {/* Background pattern */}
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">

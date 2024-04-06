@@ -3,6 +3,8 @@ import Image from 'next/image';
 import sjogLogo from '@/images/logos/sjog.png';
 import childVisionLogo from '@/images/logos/childvision.jpg';
 import learningTreeLogo from '@/images/logos/learningtree.png';
+import Head from 'next/head';
+
 
 function classNames(...classes: any[]): string {
     return classes.filter(Boolean).join(' ')
@@ -10,7 +12,11 @@ function classNames(...classes: any[]): string {
 
 export default function Testimonials() {
     return (
+
         <Container className="mt-4">
+            <Head>
+                <link rel="canonical" href="https://walshehr.ie/testimonials" />
+            </Head>
             <div className="relative isolate bg-white dark:bg-zinc-900  pb-32 sm:pt-32">
                 {/* Background pattern */}
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
