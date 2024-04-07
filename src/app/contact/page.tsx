@@ -1,26 +1,27 @@
-'use client';
-import { BuildingOffice2Icon, EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline'
+'use client'
+import {
+  BuildingOffice2Icon,
+  EnvelopeIcon,
+  PhoneIcon,
+} from '@heroicons/react/24/outline'
 import { Container } from '@/components/Container2'
-import { useState } from 'react';
-import { SuccessMessage } from '@/components/emailSentSuccessfullyNotification';
-import { FailureMessage } from '@/components/emailSentFailedNotification';
-// @ts-ignore comment 
-import { sendEmail } from '@/components/sendEmail';
-
-
+import { useState } from 'react'
+import { SuccessMessage } from '@/components/emailSentSuccessfullyNotification'
+import { FailureMessage } from '@/components/emailSentFailedNotification'
+// @ts-ignore comment
+import { sendEmail } from '@/components/sendEmail'
 
 export default function Contact() {
-  const [emailSent, setEmailSent] = useState<boolean | null>(null);
+  const [emailSent, setEmailSent] = useState<boolean | null>(null)
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    const formData = new FormData(e.currentTarget);
-    const result = await sendEmail(formData);
-    setEmailSent(result);
-  };
+    e.preventDefault()
+    const formData = new FormData(e.currentTarget)
+    const result = await sendEmail(formData)
+    setEmailSent(result)
+  }
 
   return (
-
     <Container className="mt-16 sm:mt-32">
       {emailSent === true && <SuccessMessage />}
       {emailSent === false && <FailureMessage />}
@@ -28,7 +29,7 @@ export default function Contact() {
         <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
           <div className="relative px-6 pb-20 pt-24 sm:pt-32 lg:static lg:px-8 lg:py-48">
             <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
-              <div className="absolute inset-y-0 left-0 -z-10 w-full overflow-hidden rounded-3xl bg-gray-300 dark:bg-zinc-800 ring-1 ring-gray-900/10 lg:w-[52.5%]">
+              <div className="absolute inset-y-0 left-0 -z-10 w-full overflow-hidden rounded-3xl bg-gray-300 ring-1 ring-gray-900/10 lg:w-[52.5%] dark:bg-zinc-800">
                 <svg
                   className="absolute inset-0 h-full w-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_right,white,transparent)]"
                   aria-hidden="true"
@@ -45,26 +46,49 @@ export default function Contact() {
                       <path d="M130 200V.5M.5 .5H200" fill="none" />
                     </pattern>
                   </defs>
-                  <rect width="100%" height="100%" strokeWidth={0} fill="white" />
-                  <svg x="100%" y={-1} className="overflow-visible fill-gray-50">
+                  <rect
+                    width="100%"
+                    height="100%"
+                    strokeWidth={0}
+                    fill="white"
+                  />
+                  <svg
+                    x="100%"
+                    y={-1}
+                    className="overflow-visible fill-gray-50"
+                  >
                     <path d="M-470.5 0h201v201h-201Z" strokeWidth={0} />
                   </svg>
-                  <rect width="100%" height="100%" strokeWidth={0} fill="url(#83fd4e5a-9d52-42fc-97b6-718e5d7ee527)" />
+                  <rect
+                    width="100%"
+                    height="100%"
+                    strokeWidth={0}
+                    fill="url(#83fd4e5a-9d52-42fc-97b6-718e5d7ee527)"
+                  />
                 </svg>
               </div>
-              <h1 className="mt-2 text-4xl font-bold tracking-tight text-zinc-800 sm:text-4xl dark:text-zinc-100">Get in touch</h1>
+              <h1 className="mt-2 text-4xl font-bold tracking-tight text-zinc-800 sm:text-4xl dark:text-zinc-100">
+                Get in touch
+              </h1>
               <p className="mt-6 text-lg leading-8 text-gray-600">
-                Proin volutpat consequat porttitor cras nullam gravida at. Orci molestie a eu arcu. Sed ut tincidunt
-                integer elementum id sem. Arcu sed malesuada et magna.
+                Proin volutpat consequat porttitor cras nullam gravida at. Orci
+                molestie a eu arcu. Sed ut tincidunt integer elementum id sem.
+                Arcu sed malesuada et magna.
               </p>
               <dl className="mt-10 space-y-4 text-base leading-7 text-gray-600">
                 <div className="flex gap-x-4">
                   <dt className="flex-none">
                     <span className="sr-only">Telephone</span>
-                    <PhoneIcon className="h-7 w-6 text-gray-400" aria-hidden="true" />
+                    <PhoneIcon
+                      className="h-7 w-6 text-gray-400"
+                      aria-hidden="true"
+                    />
                   </dt>
                   <dd>
-                    <a className="hover:text-gray-900" href="tel:+1 (555) 234-5678">
+                    <a
+                      className="hover:text-gray-900"
+                      href="tel:+1 (555) 234-5678"
+                    >
                       +353 (86) 3807524
                     </a>
                   </dd>
@@ -72,10 +96,16 @@ export default function Contact() {
                 <div className="flex gap-x-4">
                   <dt className="flex-none">
                     <span className="sr-only">Email</span>
-                    <EnvelopeIcon className="h-7 w-6 text-gray-400" aria-hidden="true" />
+                    <EnvelopeIcon
+                      className="h-7 w-6 text-gray-400"
+                      aria-hidden="true"
+                    />
                   </dt>
                   <dd>
-                    <a className="hover:text-gray-900" href="mailto:hello@example.com">
+                    <a
+                      className="hover:text-gray-900"
+                      href="mailto:hello@example.com"
+                    >
                       annamarie@walshehr.ie
                     </a>
                   </dd>
@@ -83,11 +113,17 @@ export default function Contact() {
               </dl>
             </div>
           </div>
-          <form onSubmit={handleSubmit} className="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48">
+          <form
+            onSubmit={handleSubmit}
+            className="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48"
+          >
             <div className="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
               <div className="sm:col-span-2">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-semibold leading-6 text-gray-900 dark:text-zinc-100">
+                  <label
+                    htmlFor="name"
+                    className="block text-sm font-semibold leading-6 text-gray-900 dark:text-zinc-100"
+                  >
                     Name
                   </label>
                   <div className="mt-2.5">
@@ -96,12 +132,15 @@ export default function Contact() {
                       name="name"
                       id="name"
                       autoComplete="name"
-                      className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 dark:text-zinc-100 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                      className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 dark:text-zinc-100"
                     />
                   </div>
                 </div>
-                <div className="sm:col-span-2 mt-2.5">
-                  <label htmlFor="email" className="block text-sm font-semibold leading-6 text-gray-900 dark:text-zinc-100 ">
+                <div className="mt-2.5 sm:col-span-2">
+                  <label
+                    htmlFor="email"
+                    className="block text-sm font-semibold leading-6 text-gray-900 dark:text-zinc-100 "
+                  >
                     Email
                   </label>
                   <div className="mt-2.5">
@@ -110,12 +149,15 @@ export default function Contact() {
                       name="email"
                       id="email"
                       autoComplete="email"
-                      className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 dark:text-zinc-100 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                      className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 dark:text-zinc-100"
                     />
                   </div>
                 </div>
-                <div className="sm:col-span-2 mt-2.5">
-                  <label htmlFor="phone-number" className="block text-sm font-semibold leading-6 text-gray-900 dark:text-zinc-100">
+                <div className="mt-2.5 sm:col-span-2">
+                  <label
+                    htmlFor="phone-number"
+                    className="block text-sm font-semibold leading-6 text-gray-900 dark:text-zinc-100"
+                  >
                     Phone number
                   </label>
                   <div className="mt-2.5">
@@ -124,12 +166,15 @@ export default function Contact() {
                       name="phone-number"
                       id="phone-number"
                       autoComplete="tel"
-                      className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 dark:text-zinc-100 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                      className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 dark:text-zinc-100"
                     />
                   </div>
                 </div>
-                <div className="sm:col-span-2 mt-2.5">
-                  <label htmlFor="message" className="block text-sm font-semibold leading-6 text-gray-900 dark:text-zinc-100">
+                <div className="mt-2.5 sm:col-span-2">
+                  <label
+                    htmlFor="message"
+                    className="block text-sm font-semibold leading-6 text-gray-900 dark:text-zinc-100"
+                  >
                     Message
                   </label>
                   <div className="mt-2.5">

@@ -1,7 +1,5 @@
 import Link from 'next/link'
-import {
-  LinkedInIcon,
-} from '@/components/SocialIcons'
+import { LinkedInIcon } from '@/components/SocialIcons'
 import { ContainerInner, ContainerOuter } from '@/components/Container'
 
 function NavLink({

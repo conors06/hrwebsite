@@ -4,11 +4,12 @@ import { Providers } from '@/app/providers'
 import { Layout } from '@/components/Layout'
 
 import '@/styles/tailwind.css'
-import { SpeedInsights } from "@vercel/speed-insights/next"
-import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from '@vercel/speed-insights/next'
+import { Analytics } from '@vercel/analytics/react'
 export const metadata: Metadata = {
   title: 'Walshe HR',
-  description: 'Walshe HR is an Irish HR consulting company in Ireland. Specialising in Recruitment and Retention,Training and Development,Absence Management,Employee Relations,Performance Management,Employee Wellbeing,Coaching.',
+  description:
+    'Walshe HR is an Irish HR consulting company in Ireland. Specialising in Recruitment and Retention,Training and Development,Absence Management,Employee Relations,Performance Management,Employee Wellbeing,Coaching.',
 }
 
 export default function RootLayout({
