@@ -5,5 +5,5 @@ testimonials - logo,name,position
 
 
 
-
+delete unused components
 spotlight edges past container,pop up motion contact
