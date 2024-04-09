@@ -6,7 +6,7 @@ export default function Home() {
     <>
       <Container className="mt-9">
         <div className="max-w-full">
-          <h1 className="text-center text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
+          <h1 className="text-center text-5xl font-bold text-black dark:text-zinc-100 sm:text-5xl md:mb-12 md:text-6xl">
             Walshe HR
           </h1>
           <div className="relative mx-auto mt-3 h-40 w-[20rem] sm:w-[40rem]">

@@ -1,22 +1,19 @@
 'use server'
-import nodemailer from 'nodemailer'
+import { createTransport, } from 'nodemailer'
 
 export const sendEmail = async (formData: FormData) => {
-  const rawFormData = {
-    email: formData.get('email'),
-    name: formData.get('name'),
-    phoneNumber: formData.get('phone-number'),
-    message: formData.get('message'),
-  }
+  const { email, name, phoneNumber, message } = Object.fromEntries(
+    formData.entries(),
+  )
 
   // Create a SMTP transporter
-  const transporter = nodemailer.createTransport({
+  const transporter = createTransport({
     host: 'smtp.zoho.eu',
     port: 465,
     secure: true,
     auth: {
       user: 'annamarie@walshehr.ie',
-      pass: 'Moycullen72?',
+      pass: 'UgUGkBdiXqtM',
     },
   })
 
@@ -26,11 +23,11 @@ export const sendEmail = async (formData: FormData) => {
     to: 'annamarie@walshehr.ie',
     subject: 'New message from your website',
     text: `
-      Name: ${rawFormData.name}
-      Email: ${rawFormData.email}
-      Phone Number: ${rawFormData.phoneNumber}
-      Message: ${rawFormData.message}
-    `,
+  Name: ${name}
+  Email: ${email}
+  Phone Number: ${phoneNumber}
+  Message: ${message}
+`,
   }
 
   // Send email

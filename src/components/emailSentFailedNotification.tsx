@@ -1,4 +1,4 @@
-import { ExclamationCircleIcon, XMarkIcon } from '@heroicons/react/20/solid'
+import { ExclamationCircleIcon } from '@heroicons/react/20/solid'
 
 export const FailureMessage = () => {
   return (
