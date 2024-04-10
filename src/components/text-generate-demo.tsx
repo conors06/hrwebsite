@@ -15,5 +15,5 @@ Passionate about people and the value that the Human
 Resources function can bring to how people experience work.`
 
 export function TextGenerateEffectDemo() {
-  return <TextGenerateEffect words={words} />
+    return <TextGenerateEffect words={words} />
 }
