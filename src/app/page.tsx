@@ -4,11 +4,10 @@ import { BackgroundBeams } from '@/components/background-beams'
 export default function Home() {
     return (
         <>
-        <div className="relative z-0">
-            <BackgroundBeams/>
-        </div>
-        
-            <Container className="relative mt-9 z-10">
+            <div className="relative z-0">
+                <BackgroundBeams />
+            </div>
+            <Container className="relative z-10 mt-9">
                 <div className="max-w-full">
                     <h1 className="text-center text-5xl font-bold text-black sm:text-5xl md:mb-12 md:text-6xl dark:text-zinc-100">
                         Walshe HR
