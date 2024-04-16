@@ -42,7 +42,8 @@ export function Footer() {
                             <div className="flex flex-wrap justify-center gap-x-6 gap-y-1 text-sm font-medium text-zinc-800 dark:text-zinc-100">
                                 <SocialLink
                                     href="https://www.linkedin.com/in/annamariewalshe/"
-                                    aria-label="Follow on LinkedIn"
+                                    target = "_blank"
+                                    aria-label="Links to my LinkedIn profile"
                                     icon={LinkedInIcon}
                                 />
                                 <NavLink href="/">Home</NavLink>
