@@ -32,7 +32,7 @@ export const HoverEffect = ({
                     <AnimatePresence>
                         {hoveredIndex === idx && (
                             <motion.span
-                                className="absolute inset-0 block h-full w-full rounded-3xl bg-neutral-200  dark:bg-slate-800/[0.8]"
+                                className="absolute inset-0 block h-full w-full rounded-3xl bg-fuchsia-200  dark:bg-slate-800/[0.8]"
                                 layoutId="hoverBackground"
                                 initial={{ opacity: 0 }}
                                 animate={{
@@ -66,7 +66,7 @@ export const Card = ({
     return (
         <div
             className={cn(
-                'relative z-20 h-full w-full overflow-hidden rounded-2xl border border-gray-900/10 bg-white p-4 group-hover:border-slate-700 dark:border-white/[0.2]',
+                'relative z-20 h-full w-full overflow-hidden rounded-2xl border border-gray-900/10 bg-white p-4 group-hover:border-cv dark:border-cv/[0.2]',
                 className
             )}
         >
@@ -86,7 +86,7 @@ export const CardTitle = ({
     return (
         <h4
             className={cn(
-                'mt-4 font-bold tracking-wide text-gray-900',
+                'mt-4 font-bold text-lg tracking-wide text-gray-900',
                 className
             )}
         >
@@ -104,7 +104,7 @@ export const CardDescription = ({
     return (
         <p
             className={cn(
-                'mt-8 text-sm leading-relaxed tracking-wide text-zinc-400',
+                'mt-8 text-sm leading-relaxed tracking-wide text-zinc-500',
                 className
             )}
         >

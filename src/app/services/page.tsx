@@ -3,7 +3,7 @@ import { Container } from '@/components/Container'
 
 export default function Services() {
     return (
-        <Container className="mt-4">
+        <Container className="mt-0">
             <div className="bg-pink relative isolate sm:pt-32 dark:bg-zinc-900">
                 {/* Background pattern */}
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -15,7 +15,6 @@ export default function Services() {
                 </div>
             </div>
             <div className="mx-auto mt-8">
-                {' '}
                 <CardHoverEffectDemo />
             </div>
         </Container>

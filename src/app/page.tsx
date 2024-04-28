@@ -1,11 +1,9 @@
 import { Container } from '@/components/Container'
 import { SparklesCore } from '@/components/sparkles'
-import { BackgroundBeams } from '@/components/background-beams'
 export default function Home() {
     return (
         <>
             <div className="relative z-0">
-                <BackgroundBeams />
             </div>
             <Container className="relative z-10 mt-9">
                 <div className="max-w-full">
