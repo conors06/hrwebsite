@@ -14,9 +14,7 @@ export default function Services() {
                     </div>
                 </div>
             </div>
-            <div className="mx-auto mt-8">
                 <CardHoverEffectDemo />
-            </div>
         </Container>
     )
 }

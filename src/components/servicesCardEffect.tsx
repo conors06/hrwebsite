@@ -102,13 +102,13 @@ export const CardDescription = ({
     children: React.ReactNode
 }) => {
     return (
-        <p
+        <span
             className={cn(
                 'mt-8 text-sm leading-relaxed tracking-wide text-zinc-500',
                 className
             )}
         >
             {children}
-        </p>
+        </span>
     )
 }
