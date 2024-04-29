@@ -32,7 +32,7 @@ export default function Home() {
                     </div>
                 </div>
                 <div className="md:prose-lg lg:prose-xl prose mt-12 text-center text-zinc-600 dark:text-zinc-100">
-                    I&apos;m Anna Marie, a HR Professional with more than 18
+                    I&apos;m Anna Marie, a HR Professional with more than 20
                     years experience working in a variety of sectors, for
                     example Healthcare, Not for Profit, Banking and Technology.
                     Knowledgeable in all areas of HR with particular expertise

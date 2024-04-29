@@ -112,7 +112,7 @@ export default function Testimonials() {
                         </div>
                         <div className="space-y-32">
                             <figure className="rounded-2xl bg-white shadow-lg ring-1 ring-gray-900/5 sm:h-secondFigureFit">
-                                <blockquote className="sm:mt-0 mt-24 p-6 text-lg font-semibold leading-7 tracking-tight text-gray-900 sm:p-12 sm:text-xl sm:leading-8">
+                                <blockquote className="mt-24 p-6 text-lg font-semibold leading-7 tracking-tight text-gray-900 sm:mt-0 sm:p-12 sm:text-xl sm:leading-8">
                                     <p>{`"I have been more than happy with the quality of Anna Marie's work. Anna Marie is an absolute professional, nothing phases her. In addition to having a very impressive HR knowledge-base, Anna Marie is pragmatic, cogent and very personally engaging, putting people at their ease, something which is invaluable when having potentially difficult conversations."`}</p>
                                 </blockquote>
                                 <figcaption className="flex flex-wrap items-center gap-x-4 gap-y-4 border-t border-gray-900/10 px-6 py-4 sm:flex-nowrap">
@@ -163,7 +163,7 @@ export default function Testimonials() {
                                         </div>
                                         <div className="text-gray-600">
                                             {
-                                                'Interim CEO, ChildVision, National Education Centre for Blind Children'
+                                                'Director, St John of God Community Services'
                                             }
                                         </div>
                                     </div>
