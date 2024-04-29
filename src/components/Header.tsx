@@ -413,7 +413,7 @@ export function Header() {
                                         }}
                                     />
                                     <Avatar
-                                        className="block h-48 w-48 origin-left"
+                                        className="block h-20 w-20 sm:h-48 sm:w-48 origin-left"
                                         style={{
                                             transform:
                                                 'var(--avatar-image-transform)',
