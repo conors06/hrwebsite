@@ -5,9 +5,8 @@ import childVisionLogo from '@/images/logos/childvision.jpg'
 import learningTreeLogo from '@/images/logos/learningtree.png'
 import Link from 'next/link'
 import { Metadata } from 'next'
-
 export const metadata: Metadata = {
-    title: 'Testimonials',
+  title: 'Testimonials',
 }
 function classNames(...classes: any[]): string {
     return classes.filter(Boolean).join(' ')

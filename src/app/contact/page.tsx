@@ -2,7 +2,6 @@ import { EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline'
 import { Container } from '@/components/Container2'
 import { FormComponent } from '@/components/formComponent'
 import { Metadata } from 'next'
-
 export const metadata: Metadata = {
     title: 'Contact',
 }
