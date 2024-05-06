@@ -16,7 +16,6 @@ export const metadata: Metadata = {
         'Walshe HR is an Irish HR consulting company in Ireland. Specialising in Recruitment and Retention,Training and Development,Absence Management,Employee Relations,Performance Management,Employee Wellbeing,Coaching.',
 }
 
-
 export default function RootLayout({
     children,
 }: {

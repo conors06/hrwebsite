@@ -5,7 +5,7 @@ export const metadata: Metadata = {
     title: 'Page not found',
     metadataBase: new URL('https://walshehr.ie'),
     alternates: {
-      canonical: '/',
+        canonical: '/',
     },
 }
 export default function NotFound() {

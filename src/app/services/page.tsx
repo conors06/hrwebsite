@@ -2,7 +2,7 @@ import { CardHoverEffectDemo } from '@/components/servicesCardEffectDemo'
 import { Container } from '@/components/Container'
 import { Metadata } from 'next'
 export const metadata: Metadata = {
-  title: 'Services',
+    title: 'Services',
 }
 export default function Services() {
     return (
@@ -17,7 +17,7 @@ export default function Services() {
                     </div>
                 </div>
             </div>
-                <CardHoverEffectDemo />
+            <CardHoverEffectDemo />
         </Container>
     )
 }
