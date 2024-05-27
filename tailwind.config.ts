@@ -30,6 +30,16 @@ export default {
     ],
     theme: {
         extend: {
+            animation: {
+                "border-beam": "border-beam calc(var(--duration)*1s) infinite linear",
+              },
+              keyframes: {
+                "border-beam": {
+                  "100%": {
+                    "offset-distance": "100%",
+                  },
+                },
+              },
             colors: {
                 cv: '#c989cc',
             },

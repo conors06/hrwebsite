@@ -1,5 +1,6 @@
 import { Container } from '@/components/Container'
 import { SparklesCore } from '@/components/sparkles'
+
 export default function Home() {
     return (
         <>

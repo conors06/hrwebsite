@@ -1,6 +1,6 @@
 'use client'
 
-import { TextGenerateEffect } from '@/components/text-generate-effect'
+import { TextGenerateEffect } from '@/components/aceternity/text-generate-effect'
 
 const words = `I’m Anna Marie, a HR Professional with more than 18 years experience working in
 a variety of sectors, for example Healthcare, Not for Profit,
